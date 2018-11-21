@@ -6,5 +6,7 @@
 ## Description
 > iReporter is a web application that enables any citizen to bring any form of corruption to the notice of the relevant authorities and the general public. Users can also report on the things that need government intervention.  
 
+Access the website through this link here: [iReporter](https://khwilo.github.io/iReporter/)  
+
 ### Contributors
 [Khwilo Kabaka](https://www.github.com/khwilo)
