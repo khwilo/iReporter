@@ -62,6 +62,7 @@ header a {
 
 main {
     flex-grow: 1;
+    padding: 20px;
 }
 
 header, main, footer {
@@ -152,14 +153,25 @@ footer {
     border: 1px solid #000000;
 }
 
-.timeline li {
-    list-style-type: none;
-    margin-bottom: 10px; 
+/* Style the user timeline */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.timeline h1, .timeline h2 {
-    border: 2px solid black;
-    width: 600px;
+#timeline-label {
+    border-bottom: 2px solid black;
+}
+
+#timeline-content {
+    border: 1px solid gray;
+}
+
+#timeline-img {
+    width: 400px;
+    height: 300px;
+    border: 2px solid brown;
 }
 
 #search-timeline {
