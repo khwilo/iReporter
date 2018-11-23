@@ -14,25 +14,21 @@
                 <a href="#" class="nav-bg-col">Sign Out</a>
             </div>
         </header>
-        <div class="main">
-            <ul class="timeline">
-                <li>
-                    <p id="username">Username: <span>Joe Sef</span></p>
-                </li>
-                <li>
-                    <h1>TITLE OF THE INCIDENCE</h1>
-                </li>
-                <li>
-                    <h2>THIS INCIDENCE ENTAILS...CONTAINS THE DESCRIPTION OF THE INCIDENCE</h2>
-                </li>
-                <li>
-                    <img src="" id="img" style="width: 500px; height: 100px;"/>
-                </li>
-                <li>
-                     <video width="500px" height="100px" controls></video>
-                </li>
-            </ul>
-        </div>
+        <main>
+            <div class="timeline">
+                <p><strong><em>USERNAME: <span id="username">FOO-BAR FOO</span></em></strong></p>
+                <p id="timeline-label"><strong>TITLE OF THE REPORT</strong></p>
+                <p id="timeline-content">THIS REPORT ENTAILS...CONTAINS THE DESCRIPTION OF THE REPORT</p>
+                <p><img src="img/maroon-1.jpg" id="timeline-img" /></p>
+                <p><strong>Change Report Status:<strong></p>
+                <select id="change-status">
+                        <option value="resolved">Resolved</option>
+                        <option value="resolved">Resolved</option>
+                        <option value="rejected">Rejected</option>
+                </select>
+            </div>
+            <hr>
+        </main>
         <footer>
             <div>
                 <p><strong>CONTACT</strong></p>
