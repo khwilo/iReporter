@@ -148,13 +148,13 @@ footer {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-  }
+}
 
-  #remember-me {
+#remember-me {
     color: #800000;
-  }
+}
 
-  #geolocation {
+#geolocation {
     text-decoration: none;
     color: #211d1d;
     padding: 10px;
@@ -162,4 +162,8 @@ footer {
     font-size: 16px;
     font-weight: bold;
     background-color: #ffff00;
-  }
+}
+
+#location-view {
+    border: 1px solid #000000;
+}
