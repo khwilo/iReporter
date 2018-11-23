@@ -198,9 +198,24 @@ footer {
     margin-right: 15px;
 }
 
-.iroperter-statistics {
+.iroperter-statistics-wrapper {
+    margin: 15px;
+}
+
+.iroperter-statistics-row {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.ireporter-statistic {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    border: 1px solid black;
+    text-align: center;
 }
 
 .issue-statistic {
@@ -210,17 +225,10 @@ footer {
     margin-left: 20px;
 }
 
-#iroperter-statuses {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.ireporter-child-status {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 10px auto;
-    padding: 10px;
-    margin-left: 10px;
+.ireporter-statistic-title {
+    border-bottom: 2px solid brown;
+    font-weight: bold;
+    height: 100px;
 }
 
 #report-title {
