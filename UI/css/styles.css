@@ -139,6 +139,18 @@ footer {
     color: #800000;
 }
 
+#choose-report {
+    width: 300px;
+}
+
+#report-title {
+    width: 400px;
+}
+
+#report-contents {
+    width: 400px;
+    height: 200px;
+}
 #geolocation {
     text-decoration: none;
     color: #211d1d;
@@ -150,7 +162,9 @@ footer {
 }
 
 #location-view {
-    border: 1px solid #000000;
+    color: #800000;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 /* Style the user timeline */
