@@ -3,6 +3,7 @@
     <head>
         <title>iReporter</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body class="container">
         <header>
@@ -31,11 +32,15 @@
                             <label for="video">Select Video to Upload: </label>
                             <input type="file" name="video">
                         </li>
+                        </li>
+                        <li>
+                            <a href="#" id="geolocation" onclick="getLocation();">GET LOCATION</a>
+                            <p id="location-view"></p>
+                        </li>
                         <li>
                             <button id="submit">Report</button>
                         </li>
                     </ul>
-                    
                 </form>
             </div>
         </div>
