@@ -252,3 +252,8 @@ footer {
 #report-status:hover .status-items {
     display: block;
 }
+
+.timeline #username {
+    border: 2px solid black;
+    width: 300px;
+}
