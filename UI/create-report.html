@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iReporter | Report</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="create-report.html" id="logo"><h1>iReporter</h1></a>
+                <div class="navigation-links">
+                    <a href="user-timeline.html" class="btn-bg-col">Timeline</a>
+                    <a href="ireporter-statistics.html" class="btn-bg-col">Statistics</a>
+                    <a href="index.html" class="btn-bg-col">Sign Out</a>
+                </div>
+            </header>
+        <main>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <p id="contact-form-label"><strong>Choose the Kind of Report</strong></p>
+                    <select id="choose-report">
+                        <option value="red-flag">Red Flag</option>
+                        <option value="intervention">Intervention</option>
+                    </select>
+                    <form action="create-report.html" method="post">
+                        <p><input type="text" id="report-title" placeholder="Enter title of the red flag"></p>
+                        <p><textarea id="report-contents">Enter details of the red flag</textarea></p>
+                        <p><label for="picture">Select Image to Upload: </label></p>
+                        <p><input type="file" name="picture" accept="image/*"></p>
+                        <p><label for="video">Select Video to Upload: </label></p>
+                        <p><input type="file" name="video"></p>
+                        <p><a href="#" id="geolocation" onclick="getLocation();">GET LOCATION</a></p>
+                        <p id="location-view"></p>
+                        <p><input type="submit" value="Submit" id="submit"></p>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p><strong>CONTACT</strong></p>
+                <p class="footer-content">+25471880261</p>
+            </div>
+            <div>
+                <p><strong>LOCATION</strong></p>
+                <p class="footer-content">Membley Park, Ruiru</p>
+            </div>
+            <div>
+                <p class="footer-content">&copy; Copyright 2018</p>
+            </div>
+        </footer>
+        </div>
+    </body>
+</html>

@@ -1,41 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>iReporter</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>iReporter | Sign In</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
-    <body class="container">
-        <header>
-            <a href="#" id="logo"><h1>iReporter</h1></a>
-            <div class="navigation">
-                <a href="#" class="nav-bg-col">Sign In</a>
-                <a href="#" class="nav-bg-col">Sign Up</a>
+    <body>
+        <div class="container">
+            <header>
+            <a href="index.html" id="logo"><h1>iReporter</h1></a>
+            <div class="navigation-links">
+                <a href="signin.html" class="btn-bg-col">Sign In</a>
+                <a href="signup.html" class="btn-bg-col">Sign Up</a>
             </div>
         </header>
-        <div class="main">
-            <div class="sign-up-form">
-                <p><strong>Sign In</strong></p>
-                <form>
-                    <ul class="flex-outer">
-                        <li>
-                            <label for="username">Username:</label>
-                            <input type="text" id="username" name=username placeholder="Enter your username" class="field-size">
-                        </li>
-                        <li>
-                            <label for="password1">Password:</label>
-                            <input type="password" id="password1" name="password" placeholder="Enter your password" class="field-size">
-                        </li>
-                        <li>
-                            <input type="checkbox" name="remember-me"><span id="remember-me"><em>Remember Me</em></span>
-                        </li>
-                        <li>
-                            <button id="submit">Submit</button>
-                        </li>
-                    </ul>
-                    
-                </form>
+        <main>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <p id="contact-form-label"><strong>Sign In</strong></p>
+                    <form action="user-timeline.html" method="post">
+                        <p><input type="text" id="username" placeholder="Enter your username"></p>
+                        <p><input type="password" id="password1" placeholder="Enter your password"></p>
+                        <p><input type="checkbox" name="remember-me"><span id="remember-me"><em>Remember Me</em></span></p>
+                        <p><input type="submit" value="Sign In" id="submit"></p>
+                    </form>
+                </div>
             </div>
-        </div>
+        </main>
         <footer>
             <div>
                 <p><strong>CONTACT</strong></p>
@@ -49,5 +39,6 @@
                 <p class="footer-content">&copy; Copyright 2018</p>
             </div>
         </footer>
+        </div>
     </body>
 </html>
