@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>iReporter | Home</title>
+        <title>iReporter | Profile</title>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <script type="text/javascript" src="js/script.js"></script>
     </head>
@@ -11,7 +11,7 @@
             <a href="home.html" id="logo"><h1>iReporter</h1></a>
             <div class="navigation-links">
                 <div class="nav-link-btn">
-                    <a href="user-profile.html">Profile</a>
+                    <a href="home.html">Home</a>
                 </div>
                 <div class="nav-link-btn">
                     <a href="create-report.html">Report</a>
@@ -22,12 +22,25 @@
             </div>
         </header>
         <main>
-            <div class="main-search-bar">
-                <div class="main-search-inner">
-                    <form class="report-search-form">
-                        <input type="text" placeholder="Enter username to search" class="report-search-form-text">
-                        <input type="button" value="Search" class="report-search-form-button">
-                    </form>
+            <div class="report-stastics-content">
+                <div class="report-statistics">
+                    <div class="report-status-resolved">R:1</div>
+                    <div class="report-status-resolved">I:3</div>
+                    <div class="report-status-unresolved">R:4</div>
+                    <div class="report-status-unresolved">I:0</div>
+                    <div class="report-status-rejected">R:10</div>
+                    <div class="report-status-rejected">I:6</div>
+		        </div>
+            </div>
+            <div class="report-statistics-labels">
+                <div class="report-label">
+                    <p><strong>GREEN - ACCEPTED</strong></p>
+                </div>
+                <div class="report-label">
+                    <p><strong>ORANGE - UNRESOLVED</strong></p>
+                </div>
+                <div class="report-label">
+                    <p><strong>RED - REJECTED</strong></p>
                 </div>
             </div>
             <div class="main-search">
@@ -54,6 +67,17 @@
                         </div>
                         <div class="main-search-location">
                             <button class="main-search-btn">LOCATION</button>
+                        </div>
+                    </div>
+                    <div class="profile-post-modify">
+                        <div class="profile-post-edit">
+                            <button class="profile-post-edit-btn">EDIT POST</button>
+                        </div>
+                        <div class="profile-post-location">
+                            <button class="profile-post-location-btn">UPDATE LOCATION</button>
+                        </div>
+                        <div class="profile-post-delete">
+                            <button class="profile-post-delete-btn">DELETE POST</button>
                         </div>
                     </div>
                 </div>  
@@ -83,8 +107,20 @@
                             <button class="main-search-btn">LOCATION</button>
                         </div>
                     </div>
+                    <div class="profile-post-modify">
+                        <div class="profile-post-edit">
+                            <button class="profile-post-edit-btn">EDIT POST</button>
+                        </div>
+                        <div class="profile-post-location">
+                            <button class="profile-post-location-btn">UPDATE LOCATION</button>
+                        </div>
+                        <div class="profile-post-delete">
+                            <button class="profile-post-delete-btn">DELETE POST</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </main>
         <footer>
             <div>
