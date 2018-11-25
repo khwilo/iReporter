@@ -2,6 +2,7 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0px;
+    background-color: #ebebe3;
 }
 
 .container {
@@ -17,13 +18,13 @@ header {
    flex-direction: row;
    align-items: center;
    justify-content: space-between;
-   background-color: #800000;
+   background-color: #4a4a48;
    padding: 5px 10px 5px 10px;
    height: 80px;
 }
 
 header a {
-    color: #a9a9a9;
+    color: whitesmoke;
     text-decoration: none;
     padding: 0 10px 0px 10px;
     text-align: center;
@@ -34,13 +35,30 @@ header a {
 #logo {
     font-size: 20px;
     float: left;
-    color: #f5deb3;
+    color: #edb228;
 }
 
 .navigation-links {
-    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
+.nav-link-btn {
+    /*background-color: white;*/
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100px;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    display: inline-block;
+}
+
+/*
 .navigation-links a:hover {
     animation-name: navigation-font-color;
     animation-duration: 500ms;
@@ -52,13 +70,7 @@ header a {
         color: #000000;
         border-bottom: 3px solid #000000;
     }
-}
-
-.btn-bg-col {
-    background-color: #ffff00;
-    margin-right: 15px;
-    padding: 12px;
-}
+}*/
 
 main {
     flex-grow: 1;
@@ -75,13 +87,18 @@ header, main, footer {
 
 .description p {
     font-size: 40px;
-    color: #696969;
+    color: black;
 }
 
 #register {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 200px;
+    margin: 20px auto 0 auto;
+    background-color: #edb228;
+    border-radius: 3px;
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
 }
 
 #register a {
@@ -90,13 +107,12 @@ header, main, footer {
     padding: 10px;
     text-align: center;
     font-size: 16px;
-    background-color: #ffff00;
 }
 
 footer {
-    background-color: #800000;
-    color: #f5deb3;
-    height: 80px;
+    background-color: #4a4a48;
+    color: #edb228;;
+    height: 100px;
     margin-top: 30px;
     padding: 10px;
     display: flex;
@@ -104,68 +120,134 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .footer-content {
     font-style: italic;
 }
 
-/* Sign Up and Sign In */
-#submit {
-    color: #211d1d;
-    background-color: #ffff00;
-    border: none;
-    padding: 10px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.contact-wrapper {
+/* Form Contents */
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 400px;
+    height: 400px;
     margin: 0 auto;
     text-align: center;
-    padding: 0px;
+    padding-top: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
 }
 
-.contact-form input {
+input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #000000;
+}
+
+input:focus {
+    border-color: gray;
+}
+
+input#latitude, input#longitude {
+    border-color: gray;
+}
+.main-inner input {
    font-size: 120%;
 }
 
-#contact-form-label {
+#main-inner-label {
     font-size: 24px;
 }
 
-#remember-me {
-    color: #800000;
+.create-report {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    height: 500px;
+    margin: 0 auto;
+    /*text-align: center;*/
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    max-width: 500px;
 }
 
-#choose-report {
-    width: 300px;
-}
-
-#report-title {
-    width: 400px;
-}
-
-#report-contents {
-    width: 400px;
-    height: 200px;
-}
-#geolocation {
-    text-decoration: none;
+#submit, #geolocation {
     color: #211d1d;
+    background-color: #edb228;
+    border: none;
     padding: 10px;
+    width: 180px;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-    background-color: #ffff00;
+    border-radius: 5px;
+    margin: 20px auto 0 auto;
 }
 
-#location-view {
-    color: #800000;
-    font-weight: bold;
+#create-report-label {
+    color: #edb228;
     font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
 }
+
+select#choose-report-type {
+    width: 400px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+textarea {
+    border: 3px solid #000000;
+    border-radius: 5px;
+}
+
+.form-inner-content {
+    margin: 10px 0 10px 0;
+    width: 500px;
+}
+
+.report-content {
+    width: 400px;
+}
+
+#report-detail {
+    height: 100px;
+}
+
+.file-upload-outer {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+  
+.file-upload-btn {
+    border: 2px solid gray;
+    color: black;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 180px;
+}
+
+.file-upload-outer input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+/* Form Contents */
 
 /* Style the user timeline */
 .timeline {
@@ -233,9 +315,4 @@ footer {
 
 #change-status {
     height: 40px;
-}
-
-#username {
-    color: #800000;
-    border: 1px dotted #000000;
 }
