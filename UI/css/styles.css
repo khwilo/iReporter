@@ -248,7 +248,7 @@ textarea {
     display: inline-block;
 }
   
-.file-upload-btn, .main-search-btn {
+.file-upload-btn, .main-search-btn, .profile-post-edit-btn, .profile-post-delete-btn, .profile-post-location-btn {
     border: 2px solid gray;
     color: black;
     background-color: white;
@@ -270,19 +270,18 @@ textarea {
 /* Form Contents */
 
 .main-search-content {
-    background-color: white;
-    max-width: 1300px;
-    height: 200px;
-    margin: 40px auto 0 auto;
     line-height: 1.65;
+    margin: 5px auto 0 auto;
+    line-height: 1.65;
+    padding: 20px 50px;
     display: flex;
+    text-align: center;
 }
 
 .main-search-content-type {
     background-color: #edb228;
-    display: flex;
-    flex: 1;
     font-weight: bold;
+    flex: 1;
 }
 
 .home-report-type {
@@ -291,12 +290,12 @@ textarea {
 }
 
 .main-search-content-description {
-    display: flex;
-    flex: 3;
     padding: 5px;
+    flex: 1;
+    background-color: white;
 }
 
-.main-search-content-options {
+.main-search-content-options, .profile-post-modify {
     background-color: #211d1d;
     color: white;
     display: flex;
@@ -318,6 +317,14 @@ textarea {
 
 .main-search-btn:hover {
     background-color: #edb228;
+}
+
+.profile-post-modify {
+    background-color: white;
+}
+
+.profile-post-edit, .profile-post-delete, .profile-post-location {
+    margin: auto;
 }
 
 
