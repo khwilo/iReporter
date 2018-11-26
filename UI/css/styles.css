@@ -384,3 +384,8 @@ textarea {
     background-color: red;
     flex: 1;
 }
+
+select#change-status {
+    padding: 5px;
+    font-weight: bold;
+}
