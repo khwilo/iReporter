@@ -47,10 +47,9 @@ header a {
 }
 
 .nav-link-btn {
-    /*background-color: white;*/
     border: 1px solid white;
     border-radius: 5px;
-    width: 100px;
+    width: 120px;
     padding: 8px;
     text-align: center;
     font-weight: bold;
